@@ -140,6 +140,110 @@
 
 // Task 5
 
+// class wordDictionary extends Dictionary {
+//   constructor(name) {
+//     super(name);
+//   }
+
+//   add(word, description) {
+//     if (!(word in this.words)) {
+//       const wordObj = {
+//         word: word,
+//         description: description,
+//         isDifficult: true
+//       };
+//       this.words[word] = wordObj;
+//     }
+//   }
+// }
+
+// const wordDictionary = new wordDictionary('Hard words');
+// wordDictionary.add('amateur', 'One who practices science or art without special training, having only a superficial knowledge.');
+// wordDictionary.add('neologism', 'A new word or expression, as well as the new meaning of the old word.');
+// wordDictionary.add('quantum', 'The indivisible part of some quantity in physics.');
+
+// wordDictionary.remove('neologism');
+// wordDictionary.showAllWords();
+
+// Task 6
+
+// class Dictionary {
+//   #name;
+//   #words;
+
+//   constructor(name) {
+//     this.#name = name;
+//     this.#words = {};
+//   }
+
+//   addNewWord(word, description) {
+//     const newWord = {
+//       word: word,
+//       description: description,
+//       isDifficult: false,
+//     };
+//     this.#words[word] = newWord;
+//   }
+
+//   add(word, description) {
+//     if (!this.#words[word]) {
+//       this.addNewWord(word, description);
+//     } else {
+//       console.log(`${word} already exists in the dictionary`);
+//     }
+//   }
+
+//   remove(word) {
+//     if (this.#words[word]) {
+//       delete this.#words[word];
+//     } else {
+//       console.log(`${word} not found in the dictionary`);
+//     }
+//   }
+
+//   showAllWords() {
+//     for (const [word, details] of Object.entries(this.#words)) {
+//       console.log(`${word} - ${details.description}`);
+//     }
+//   }
+
+//   get mainName() {
+//     return this.#name;
+//   }
+
+//   set setMainName(newName) {
+//     this.#name = newName;
+//   }
+
+//   get allWords() {
+//     return this.#words;
+//   }
+// }
+
+// class wordDictionary extends Dictionary {
+//   add(word, description) {
+//     const newWord = {
+//       word: word,
+//       description: description,
+//       isDifficult: true,
+//     };
+//     this.#words[word] = newWord;
+//   }
+// }
+
+// const wordDictionary = new wordDictionary('Difficult words');
+// wordDictionary.add('amateur', 'One who practices science or art without special training, having only a superficial knowledge.');
+// wordDictionary.add('neologism', 'A new word or expression, as well as the new meaning of the old word.');
+// wordDictionary.add('quantum', 'The indivisible part of some quantity in physics.');
+
+// wordDictionary.remove('neologism');
+// wordDictionary.showAllWords();
+
+// console.log(wordDictionary.mainName);
+// wordDictionary.setMainName = 'New Dictionary';
+// console.log(wordDictionary.mainName);
+// console.log(wordDictionary.allWords);
+
 
 // Task 7
 
